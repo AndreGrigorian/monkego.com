@@ -1,0 +1,63 @@
+<html lang="en-US">
+<head>
+    <title>Smart Monkey</title>
+    <meta name="description" content="Pathfinding Monkey Game">
+    <meta name="author" content="ahgrig">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://designify.me/code-snippets/animated-buttons/css/btns.css" rel="stylesheet">
+
+</head>
+<body>
+    <img id="paint-icon" src="images/palette.png" draggable="false">
+    <div id="connector"></div>
+    <div id="paint-tools">
+        <div id="yellow" class="colors"></div>
+        <div id="red" class="colors"></div>
+        <div id="green" class="colors"></div>
+        <div id="blue" class="colors"></div>
+        <div id="white" class="colors"></div>
+        <div id="brown" class="colors"></div>
+        <div id="purple" class="colors"></div>
+        <div id="pink" class="colors"></div>
+        <div id="orange"class="colors"></div>
+    </div>
+    <div id="canvas-div" style = "text-align:center;">  
+        <div id="img-container"> 
+            <img id="monkeImg"  class="img" src="images/monke.jpg" draggable="false">
+            <img id="endImg" class="img" src="images/end.png" draggable="false">
+           
+        </div>
+        
+        <canvas id="main-canvas">Your browser does not support the canvas element.
+            
+        </canvas>
+    </div>
+
+    <p id="run-status"></p>
+    
+    
+        <div id="div-btn2" class="col-md-3 col-sm-3 col-xs-6" > 
+            <a href="#" class="btn btn-sm animated-button thar-two" id="clear" draggable="false">Clear</a> 
+        </div>
+
+   
+        <div id="div-btn" class="col-md-3 col-sm-3 col-xs-6" > 
+            <a href="#" class="btn btn-sm animated-button thar-two" id="go" draggable="false">Go</a> 
+        </div>
+
+    <div id="upload-img">
+        <button class = "imgUpload" id="img-btn" onclick="document.getElementById('file-input').click();">Choose Destination Image</button>
+        <input id="file-input" type="file" name="name" style="display: none;" accept="image/png, image/jpeg"/>  
+        <br>  
+        <button class = "imgUpload" id="restore-img" onclick="restoreImg()">Restore to Default</button>
+    </div>
+
+
+    <script src="js/draw.js"></script>
+    <script src="js/heapAstar.js"></script>
+    
+
+</body>
+</html>

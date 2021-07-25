@@ -1,0 +1,225 @@
+
+
+ 
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background: #353535;
+	color: #FFF;
+    overflow: hidden;
+    
+}
+
+
+
+
+#main-canvas{
+    border-radius: 15px;
+    border: 2px solid #F7CA18;
+    background-color: black;
+    cursor: crosshair;
+}
+
+
+/*GO BUTTON*/
+#div-btn{
+    padding-left: 42%;
+    padding-right: 42%;
+    user-select:none;
+}
+
+/*CLEAR BUTTON*/
+#div-btn2{
+    padding-left: 42%;
+    padding-right: 42%;
+    user-select:none;
+}
+
+#monkeImg{
+    position: fixed;
+    top:120px;
+    left: 180px;
+    width: 150;
+    user-select:none;
+}
+
+#endImg{
+    position: fixed;
+    top: 450px;
+    left: 405px;
+    width: 100;
+    user-select:none;
+    
+}
+
+#img-container{
+    cursor: grab;
+}
+
+#run-status{
+    text-align: center;
+    color: aqua;
+    font-size: 20px;
+}
+
+
+#paint-icon{
+    position: fixed;
+    width: 60px;
+    background-color:rgba(211, 211,211, 0.6);
+    user-select:none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #F7CA18;
+    cursor: pointer;
+}
+
+
+
+
+#paint-tools{
+    display: none;
+    position: fixed;
+    width: 75px;
+    height: 520px;
+    background-color: rgba(211, 211,211, 0.6);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #F7CA18;
+    box-shadow: 5px 10px 5px #000000;
+}
+
+.colors{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #F7CA18;
+    cursor: pointer;
+}
+
+.colors:hover{
+    box-shadow: 5px 5px 5px #181717;
+}
+
+
+
+
+#yellow{
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#white{
+    background-color: white;
+}
+#brown{
+    background-color: #964B00;
+}
+#purple{
+    background-color: purple;
+}
+#pink{
+    background-color: pink;
+}
+#orange{
+    background-color: orange;
+}
+
+#connector{
+    position: fixed;
+    width: 70px;
+    height: 30px;
+}
+
+#upload-img{
+    position: fixed;
+
+}
+
+.imgUpload{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #353535;
+    color: #FFF;
+    padding: 10px;
+    border-style: solid;
+    border-color: #F7CA18;
+    margin-bottom: 10px;
+    /* width: 100%; */
+}
+
+.imgUpload:hover{
+    background-color: #F7CA18;
+    color: #000000; 
+    box-shadow: 5px 10px 5px #181717;
+}
+
+
+#restore-img{
+    display: none;
+}
+
+@media only screen and (max-width: 632px){
+    .imgUpload{
+        display: none;
+    }
+    #div-btn2{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    /* .img{
+        transform: scale(0.5);
+        
+        width: 100px;
+    } */
+    #paint-icon{
+        transform: scale(0.75);
+    }
+    #paint-tools{
+        height: 70%;
+        width: 15%;
+        transform: scale(0.75);
+        margin-top: -17%;
+    }
+    #monkeImg{
+        width: 70px;
+    }
+    #endImg{
+        width: 70px;
+    }
+}
+    
+
+@media only screen and (max-height: 500px){
+    .imgUpload{
+        display: none;
+    }
+    #monkeImg{
+        width: 50px;
+    }
+    #endImg{
+        width: 40px;
+    }
+    #paint-tools{
+        width: 8%;
+        height: 50%;
+    }
+    .colors{
+        width: 70%;
+        height: 2%;
+    }
+    #go{
+        margin-top: 10%;
+    }
+}
